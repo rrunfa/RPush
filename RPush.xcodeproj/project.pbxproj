@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5C5D1BD217C8C69000F4822 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C5D1BC217C8C69000F4822 /* PushManager.swift */; };
+		B5FA5879217B244900E12553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA5878217B244900E12553 /* AppDelegate.swift */; };
+		B5FA587B217B244A00E12553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5FA587A217B244A00E12553 /* Assets.xcassets */; };
+		B5FA587E217B244A00E12553 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FA587C217B244A00E12553 /* MainMenu.xib */; };
+		B5FA588A217B244A00E12553 /* RPushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA5889217B244A00E12553 /* RPushTests.swift */; };
+		B5FA5896217B2B2200E12553 /* TinyConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA5895217B2B2200E12553 /* TinyConstraints.framework */; };
+		B5FA5899217B30EA00E12553 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA5898217B30EA00E12553 /* ContentView.swift */; };
+		B5FA589C217B326B00E12553 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA589B217B326B00E12553 /* Security.framework */; };
+		B5FA589E217B335000E12553 /* SecIdentityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA589D217B335000E12553 /* SecIdentityManager.swift */; };
+		B5FA58A0217B39E400E12553 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA589F217B39E400E12553 /* SecurityInterface.framework */; };
+		B5FA58A2217B3A8C00E12553 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5FA58A1217B3A8C00E12553 /* SecurityFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5FA5886217B244A00E12553 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FA586D217B244900E12553 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FA5874217B244900E12553;
+			remoteInfo = RPush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5C5D1BC217C8C69000F4822 /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
+		B5FA5875217B244900E12553 /* RPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FA5878217B244900E12553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5FA587A217B244A00E12553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5FA587D217B244A00E12553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B5FA587F217B244A00E12553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FA5880217B244A00E12553 /* RPush.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPush.entitlements; sourceTree = "<group>"; };
+		B5FA5885217B244A00E12553 /* RPushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FA5889217B244A00E12553 /* RPushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPushTests.swift; sourceTree = "<group>"; };
+		B5FA588B217B244A00E12553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FA5895217B2B2200E12553 /* TinyConstraints.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConstraints.framework; path = Carthage/Build/Mac/TinyConstraints.framework; sourceTree = "<group>"; };
+		B5FA5898217B30EA00E12553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5FA589B217B326B00E12553 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B5FA589D217B335000E12553 /* SecIdentityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecIdentityManager.swift; sourceTree = "<group>"; };
+		B5FA589F217B39E400E12553 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = System/Library/Frameworks/SecurityInterface.framework; sourceTree = SDKROOT; };
+		B5FA58A1217B3A8C00E12553 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+		B5FA58A3217B3BC700E12553 /* RPush-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPush-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5FA5872217B244900E12553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FA58A2217B3A8C00E12553 /* SecurityFoundation.framework in Frameworks */,
+				B5FA58A0217B39E400E12553 /* SecurityInterface.framework in Frameworks */,
+				B5FA589C217B326B00E12553 /* Security.framework in Frameworks */,
+				B5FA5896217B2B2200E12553 /* TinyConstraints.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FA5882217B244A00E12553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5FA586C217B244900E12553 = {
+			isa = PBXGroup;
+			children = (
+				B5FA5877217B244900E12553 /* RPush */,
+				B5FA5888217B244A00E12553 /* RPushTests */,
+				B5FA5876217B244900E12553 /* Products */,
+				B5FA5894217B2B2200E12553 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5FA5876217B244900E12553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA5875217B244900E12553 /* RPush.app */,
+				B5FA5885217B244A00E12553 /* RPushTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5FA5877217B244900E12553 /* RPush */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA589A217B311F00E12553 /* Sources */,
+				B5FA5878217B244900E12553 /* AppDelegate.swift */,
+				B5FA587A217B244A00E12553 /* Assets.xcassets */,
+				B5FA587C217B244A00E12553 /* MainMenu.xib */,
+				B5FA587F217B244A00E12553 /* Info.plist */,
+				B5FA5880217B244A00E12553 /* RPush.entitlements */,
+				B5FA58A3217B3BC700E12553 /* RPush-Bridging-Header.h */,
+			);
+			path = RPush;
+			sourceTree = "<group>";
+		};
+		B5FA5888217B244A00E12553 /* RPushTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA5889217B244A00E12553 /* RPushTests.swift */,
+				B5FA588B217B244A00E12553 /* Info.plist */,
+			);
+			path = RPushTests;
+			sourceTree = "<group>";
+		};
+		B5FA5894217B2B2200E12553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA58A1217B3A8C00E12553 /* SecurityFoundation.framework */,
+				B5FA589F217B39E400E12553 /* SecurityInterface.framework */,
+				B5FA589B217B326B00E12553 /* Security.framework */,
+				B5FA5895217B2B2200E12553 /* TinyConstraints.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5FA589A217B311F00E12553 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B5FA5898217B30EA00E12553 /* ContentView.swift */,
+				B5FA589D217B335000E12553 /* SecIdentityManager.swift */,
+				B5C5D1BC217C8C69000F4822 /* PushManager.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5FA5874217B244900E12553 /* RPush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FA588E217B244A00E12553 /* Build configuration list for PBXNativeTarget "RPush" */;
+			buildPhases = (
+				B5FA5871217B244900E12553 /* Sources */,
+				B5FA5872217B244900E12553 /* Frameworks */,
+				B5FA5873217B244900E12553 /* Resources */,
+				B5FA5897217B2B2E00E12553 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPush;
+			productName = RPush;
+			productReference = B5FA5875217B244900E12553 /* RPush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5FA5884217B244A00E12553 /* RPushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FA5891217B244A00E12553 /* Build configuration list for PBXNativeTarget "RPushTests" */;
+			buildPhases = (
+				B5FA5881217B244A00E12553 /* Sources */,
+				B5FA5882217B244A00E12553 /* Frameworks */,
+				B5FA5883217B244A00E12553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5FA5887217B244A00E12553 /* PBXTargetDependency */,
+			);
+			name = RPushTests;
+			productName = RPushTests;
+			productReference = B5FA5885217B244A00E12553 /* RPushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FA586D217B244900E12553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Nikita Nagaynik";
+				TargetAttributes = {
+					B5FA5874217B244900E12553 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					B5FA5884217B244A00E12553 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B5FA5874217B244900E12553;
+					};
+				};
+			};
+			buildConfigurationList = B5FA5870217B244900E12553 /* Build configuration list for PBXProject "RPush" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5FA586C217B244900E12553;
+			productRefGroup = B5FA5876217B244900E12553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5FA5874217B244900E12553 /* RPush */,
+				B5FA5884217B244A00E12553 /* RPushTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5FA5873217B244900E12553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FA587B217B244A00E12553 /* Assets.xcassets in Resources */,
+				B5FA587E217B244A00E12553 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FA5883217B244A00E12553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5FA5897217B2B2E00E12553 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/TinyConstraints.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5FA5871217B244900E12553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FA5899217B30EA00E12553 /* ContentView.swift in Sources */,
+				B5FA589E217B335000E12553 /* SecIdentityManager.swift in Sources */,
+				B5FA5879217B244900E12553 /* AppDelegate.swift in Sources */,
+				B5C5D1BD217C8C69000F4822 /* PushManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FA5881217B244A00E12553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FA588A217B244A00E12553 /* RPushTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5FA5887217B244A00E12553 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FA5874217B244900E12553 /* RPush */;
+			targetProxy = B5FA5886217B244A00E12553 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5FA587C217B244A00E12553 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5FA587D217B244A00E12553 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5FA588C217B244A00E12553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5FA588D217B244A00E12553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B5FA588F217B244A00E12553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 286GDGBW36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RPush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rrunfa.apns.RPush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RPush/RPush-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		B5FA5890217B244A00E12553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 286GDGBW36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RPush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rrunfa.apns.RPush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RPush/RPush-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		B5FA5892217B244A00E12553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 286GDGBW36;
+				INFOPLIST_FILE = RPushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rrunfa.apns.RPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPush.app/Contents/MacOS/RPush";
+			};
+			name = Debug;
+		};
+		B5FA5893217B244A00E12553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 286GDGBW36;
+				INFOPLIST_FILE = RPushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rrunfa.apns.RPushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPush.app/Contents/MacOS/RPush";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5FA5870217B244900E12553 /* Build configuration list for PBXProject "RPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FA588C217B244A00E12553 /* Debug */,
+				B5FA588D217B244A00E12553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FA588E217B244A00E12553 /* Build configuration list for PBXNativeTarget "RPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FA588F217B244A00E12553 /* Debug */,
+				B5FA5890217B244A00E12553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FA5891217B244A00E12553 /* Build configuration list for PBXNativeTarget "RPushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FA5892217B244A00E12553 /* Debug */,
+				B5FA5893217B244A00E12553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5FA586D217B244900E12553 /* Project object */;
+}
